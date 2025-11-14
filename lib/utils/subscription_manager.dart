@@ -73,7 +73,6 @@ class SubscriptionManager {
 
   // A method to restore past purchases and update the pro status.
   Future<bool> restorePastPurchases(
-    BuildContext context,
     ListenerManager listenerManager,
   ) async {
     try {
