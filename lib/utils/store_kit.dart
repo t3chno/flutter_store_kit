@@ -124,10 +124,9 @@ class StoreKit {
   List<ProductCommon> get productItems => _productManager.productItems;
 
   // Restores past purchases for the user.
-  Future<bool> restorePastPurchases(BuildContext context) async {
+  Future<bool> restorePastPurchases() async {
     // Restore past purchases using the SubscriptionManager.
     final result = await _subscriptionManager.restorePastPurchases(
-      context,
       _listenerManager,
     );
     return result;
